@@ -24,7 +24,7 @@ class SeedsController extends Controller
      */
     public function create()
     {
-        return  "Create farmer form";
+        return view('pages.create');
     }
 
     /**
