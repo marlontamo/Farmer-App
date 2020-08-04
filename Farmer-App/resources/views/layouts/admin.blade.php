@@ -51,11 +51,19 @@
             <div id="app">
             
             </div>
-     @include ('backend/layouts.footer') 
+     @include ('Backend/layouts.footer') 
         </div>
         
 
         <script src="{{ asset('/js/app.js') }}"></script>
         <script src="{{ asset('/js/custom.js') }}"></script>
+        <script>
+            jQuery(document).ready(function(){
+                jQuery('a.sidebar-toggle').click(function(){
+                    jQuery('.sidebar-mini'). toggleClass('sidebar-collapse');
+                    
+                });
+            });
+            </script>
     </body>
 </html>
